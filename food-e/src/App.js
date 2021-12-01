@@ -11,7 +11,7 @@ import { NikeCard } from "./components/nikeCard";
 import { AccountBox } from "./components/accountBox";
 import Footer from "./components/Footer";
 import Form1 from "./components/Form1";
-
+import Form2 from "./components/Form2";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -106,50 +106,67 @@ function App() {
             height: "95vh",
             width: "100vw",
             margintop: "100px",
-            background: "#5E6600",
+            background: "#4D4D4D",
           }}
         >
           <AppContainer>
-          {data2.map((value, index) => (
+            {data2.map((value, index) => (
               <NikeCard {...value} />
             ))}
           </AppContainer>
         </div>
       </>,
       <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "95vh",
-          width: "100vw",
-          margintop: "100px",
-          background: "#233000",
-        }}
-      >
-        <AppContainer>
-          <AccountBox />
-        </AppContainer>
-      </div>
-    </>,
-    <>
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "95vh",
-        width: "100vw",
-        margintop: "100px",
-        background: "#5E6600",
-      }}
-    >
-      <AppContainer>
-        <Form1 />
-      </AppContainer>
-    </div>
-  </>,
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "95vh",
+            width: "100vw",
+            margintop: "100px",
+            background: "#233000",
+          }}
+        >
+          <AppContainer>
+            <AccountBox />
+          </AppContainer>
+        </div>
+      </>,
+      <>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "95vh",
+            width: "100vw",
+            margintop: "100px",
+            background: "#5E6600",
+          }}
+        >
+          <AppContainer>
+            <Form1 />
+          </AppContainer>
+        </div>
+      </>,
+      <>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "95vh",
+            width: "100vw",
+            margintop: "100px",
+            background: "#233000",
+          }}
+        >
+          <AppContainer>
+            <Form2 />
+          </AppContainer>
+        </div>
+      </>
     );
   }
   return (

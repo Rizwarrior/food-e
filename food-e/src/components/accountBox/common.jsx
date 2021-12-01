@@ -35,8 +35,8 @@ export const Input = styled.input`
   width: 100%;
   height: 45px;
   outline: none;
-  border: 1px solid rgba(200, 200, 200, 0.3);
-  padding: 0px 5px;
+  border: 2px solid rgba(200, 200, 200, 0.3);
+  padding: 0px 2px;
   border-bottom: 1.4px solid transparent;
   transition: all 200ms ease-in-out;
   font-size: 12px;
@@ -54,6 +54,7 @@ export const Input = styled.input`
 
 export const SubmitButton = styled.button`
   width: 100%;
+  margin-top:10px;
   padding: 11px 40%;
   color: #fff;
   font-size: 15px;

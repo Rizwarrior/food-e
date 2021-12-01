@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Lato:ital,wght@1,100&family=Roboto:ital,wght@0,100;0,900;1,700&display=swap%27");
+
+h1 {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+.box7 {
+  padding-top: 8px;
+  background-color: #9caa00a1;
+  border-radius: 1em;
+  margin-bottom: 30px;
+}
+.button7 {
+  text-align: center;
+}
+.a7 {
+  border-radius: 1em;
+  background-color: #8a9607c2;
+  color: #fff;
+  padding: 1em;
+}
+.plan5 {
+  width: 600px;
+  margin: auto;
+  border: 1px transparent;
+  border-style: inset;
+  padding: 5px;
+  padding-left: 10px;
+  overflow-y: scroll;
+  background-color: white;
+  height: 600px;
+  background-color: #233000;
+  border-radius: 8px;
+  color: white;
+}
+.plan8 {
+  width: 500px;
+  margin: auto;
+  border: 1px solid #000;
+  border-style: inset;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 10px 10px 10px #0b0c0c;
+
+  background-color: #fae3ea;
+  overflow-y: scroll;
+  height: 200px;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.61);
+  -webkit-boxshadow: 0 0 1px rgb(10, 10, 10);
+}
+.payment {
+  background-color: #8a9607c2;
+  color: white;
+  padding: 5px 5px;
+  margin-right: auto;
+  margin-left: 200px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.75;
+}
+
+input{
+    margin-left: 10px;
+    margin-top: 10px;
+}

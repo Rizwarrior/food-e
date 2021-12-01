@@ -1,98 +1,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&family=Lato:ital,wght@1,100&family=Roboto:ital,wght@0,100;0,900;1,700&display=swap%27");
 
-h1 {text-align: center;
-  font-family: 'Kanit', sans-serif;}
- 
-.button-3{
+h1 {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+
+.button-3 {
   text-align: center;
 }
-.box-3{
+.box-3 {
   padding-top: 8px;
- background-color:#fae3ea;
-  border-radius:1em ;
-  
-  }
+  background-color: #9caa00a1;
+  border-radius: 2em;
+  margin-bottom: 20px;
+  width: 550px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
 
 .card-3 {
-  border-radius: 1em;
-  background-color: #f76666;
+  border-radius: 2em;
+  background-color: #8a9607c2;
   color: #fff;
   padding: 1em;
 }
 
-
 /* Add padding to containers */
 .container-3 {
   padding: 0.5px;
- 
 }
 
-span.check{
-  padding-left:10px;
-  
+span.check {
+  padding-left: 10px;
 }
-
 
 .plan-3 {
-  width:500px;
+  width: 600px;
   margin: auto;
-  border:1px solid #000;
+  border: 1px transparent;
   border-style: inset;
-  border-radius: 8px;
   padding: 5px;
-  box-shadow: 10px 10px 10px #0b0c0c;  
   padding-left: 10px;
-  overflow-y:scroll;
+  overflow-y: scroll;
   background-color: white;
-  height:600px;
-  
-  
+  height: 600px;
+  background-color: #5E6600;
 }
 
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 10px;
+  background: #3d5203;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.61);
+  background-color: #3d5203;
   -webkit-boxshadow: 0 0 1px rgb(10, 10, 10);
 }
 
 .payment-3 {
-  background-color: #04AA6D;
+  background-color: #233000;
   color: white;
   padding: 5px 5px;
   margin-right: auto;
   margin-left: auto;
-  border:2px solid #000;
-  border-radius: 8px;
+  border: 2px solid;
+  border-radius: 100px;
   cursor: pointer;
-  width : 30%;
+  width: 30%;
+  height: 40px;
   opacity: 0.75;
-
-
-  
 }
 
-.payment:hover {
+.payment-3:hover {
   opacity: 1;
 }
 
 /* Full-width input fields */
-input[type=text],input[type=number],input[type=time],input[type=select]{
-  width: 100%;
+input[type="text"],
+input[type="number"],
+input[type="time"],
+input[type="select"] {
+  width: 90%;
   padding: 10px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
   border-radius: 8px;
   background: rgba(231, 186, 186, 0.425);
-  
 }
 
-
-p{
-  text-align:center;
+p {
+  text-align: center;
 }
-
+label{
+  color: white;
+}
