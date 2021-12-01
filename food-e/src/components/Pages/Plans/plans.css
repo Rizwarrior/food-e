@@ -1,0 +1,8 @@
+.flex-cards{
+    width: 1700px;
+    height: 750px;
+    margin-left: 200px;
+    margin-top: 70px;
+    display: flex;
+    overflow: hidden;
+}
