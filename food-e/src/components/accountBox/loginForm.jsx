@@ -55,7 +55,6 @@ export function LoginForm(props) {
         <Input type="email" placeholder="Email" onChange={handleEmailChange} />
         <Input type="password" placeholder="Password" onChange={handlePasswordChange}/>
       </FormContainer>
-     
       <Marginer1 direction="vertical" margin={10} />
       <MutedLink href="#">Forget your password?</MutedLink>
       <Marginer1 direction="vertical" margin="1.6em" />

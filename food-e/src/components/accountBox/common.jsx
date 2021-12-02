@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BoxContainer = styled.div`
   width: 300px;
-  height: 300px;  
+  height: 400px;  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,6 +54,7 @@ export const Input = styled.input`
 
 export const SubmitButton = styled.button`
   width: 100%;
+  height: 50px;
   margin-top:10px;
   padding: 11px 40%;
   color: #fff;

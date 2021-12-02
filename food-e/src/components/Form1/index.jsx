@@ -1,11 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Form1.css";
 
 const Form1 = () => {
+  const [breakfast, setBreakfast]= useState("");
+  const [breakfastAddress, setbreakfastAddress]= useState("");
+  const [breakfastState, setbreakfastState]= useState("");
+  const [breakfastPincode, setbreakfastPincode]= useState("");
+  const [breakfastTime, setbreakfastTime]= useState("");
+  const [error, setError] = useState("");
+
+  const handleBreakfast = (e) => {
+    e.preventDefault();
+    setBreakfast(e.target.value);
+  }
+  const handleBreakfastAddress = (e) => {
+    e.preventDefault();
+    setbreakfastAddress(e.target.value);
+  }
+  const handleBreakfastState = (e) => {
+    e.preventDefault();
+    setbreakfastState(e.target.value);
+  }
+  const handleBreakfastPincode = (e) => {
+    e.preventDefault();
+    setbreakfastPincode(e.target.value);
+  }
+  const handleBreakfastTime = (e) => {
+    e.preventDefault();
+    setbreakfastTime(e.target.value);
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(breakfast != '' && breakfastAddress != '' && breakfastState != "" && breakfastPincode != '' && breakfastTime != "") {
+      console.log("YOU CLICKED ON SUBMIT");
+      console.log("Breakfast Selected:", breakfast);
+      console.log("Breakfast Address : ", breakfastAddress);
+      console.log("Breakfast State :", breakfastState);
+      console.log("Breakfast Pincode :", breakfastPincode );
+      console.log("Breakfast Time :", breakfastTime );
+      setError("")
+    } else {
+      if(breakfastAddress === '') {
+        setError("Please enter your breakfast address");
+      } else if(breakfastState === ""){
+        setError("please enter your breakfast state");
+      }
+      else if(breakfastPincode === ""){
+        setError("please enter your breakfast pincode");
+      }
+      else if(breakfastTime === ""){
+        setError("please enter your breakfast time");
+      }
+    }
+
+    // make backend call here --- 
+    // axios.post(...url , {emailId: emailId, password: password});
+  }
+
   return (
     <div>
       <div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="plan-3">
             <div className="box-3">
               <span className="check">
@@ -14,6 +70,7 @@ const Form1 = () => {
                   id="breakfast"
                   name="meal"
                   value="breakfast"
+                  onChange={handleBreakfast}
                 />
               </span>
                {" "}
@@ -22,10 +79,10 @@ const Form1 = () => {
               </b>
               <div className="card-3">
                 <label for="Address">Address:</label>
-                <input type="text" id="Address" name="Address" />
+                <input type="text" id="Address" name="Address" onChange={handleBreakfastAddress} />
                 <label for="State">
                   State:
-                  <select id="State" name="State">
+                  <select id="State" name="State" onChange={handleBreakfastState}>
                     <option value="None">None Selected</option>
                     <option value="Andhra Pradesh">Andhra Pradesh</option>
                     <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -62,9 +119,9 @@ const Form1 = () => {
                 <br></br>
                 <br></br>
                 <label for="Pincode"> Pincode:</label>
-                <input type="number" id="Pincode" name="Pincode" />
+                <input type="number" id="Pincode" name="Pincode" onChange={handleBreakfastPincode}/>
                 <label for="Time">Time:</label>
-                <input type="time" id="Time" name="Time" />
+                <input type="time" id="Time" name="Time" onChange={handleBreakfastTime} />
               </div>
             </div>
             <div className="box-3">
@@ -181,6 +238,7 @@ const Form1 = () => {
               <button type="submit" className="payment-3">
                 Proceed to payment
               </button>{" "}
+              {error!='' && <p>{error}</p>}
             </div>
           </div>
         </form>
